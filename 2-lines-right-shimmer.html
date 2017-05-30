@@ -13,11 +13,11 @@
 .ramesh-animate:not(input):not(textarea):not(button) {
  -moz-user-select: none;
 }
-.ola-ripple.ramesh-animate {
+.ramesh-ripple.ramesh-animate {
 	overflow: hidden;
 	position: relative;
 }
-.ola-ripple.ramesh-animate::after {
+.ramesh-ripple.ramesh-animate::after {
  background-image: radial-gradient(circle, #acacac 10%, transparent 10.01%);
  background-position: 50% center;
  background-repeat: no-repeat;
@@ -33,7 +33,7 @@
  transition: transform 0.5s ease 0s, opacity 1s ease 0s;
  width: 100%;
 }
-.ola-ripple.ramesh-animate:active::after {
+.ramesh-ripple.ramesh-animate:active::after {
  opacity: 0.2;
  transform: scale(0, 0);
  transition: all 0s ease 0s;
@@ -82,7 +82,7 @@ header.ramesh-animate {
 	margin-bottom: 10px;
 	padding: 0 10px;
 }
-ola-app.ramesh-animate[unresolved] {
+ramesh-app.ramesh-animate[unresolved] {
 	display: block;
 	min-height: 100vh;
 }
@@ -225,7 +225,7 @@ img.ramesh-animate, svg.ramesh-animate {
 .divider.ramesh-animate:last-of-type {
 	display: none;
 }
-.ola-svg.ramesh-animate {
+.ramesh-svg.ramesh-animate {
 	display: inline-block;
 	fill: currentcolor;
 	height: 24px;
@@ -236,7 +236,7 @@ img.ramesh-animate, svg.ramesh-animate {
 .divider.center.ramesh-animate {
 	margin: 0 8px;
 }
-.ola-select.ramesh-animate {
+.ramesh-select.ramesh-animate {
 	-moz-appearance: none;
 	background-color: transparent;	
 	background-position: right 0 center;
