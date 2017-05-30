@@ -1,0 +1,561 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+
+.text-placeholder.ramesh-animate{ margin-top:5px;}
+.ramesh-animate {
+	box-sizing: border-box;
+	outline: medium none;
+}
+.ramesh-animate:not(input):not(textarea):not(button) {
+ -moz-user-select: none;
+}
+.ola-ripple.ramesh-animate {
+	overflow: hidden;
+	position: relative;
+}
+.ola-ripple.ramesh-animate::after {
+ background-image: radial-gradient(circle, #acacac 10%, transparent 10.01%);
+ background-position: 50% center;
+ background-repeat: no-repeat;
+ content: "";
+ display: block;
+ height: 100%;
+ left: 0;
+ opacity: 0;
+ pointer-events: none;
+ position: absolute;
+ top: 0;
+ transform: scale(10, 10);
+ transition: transform 0.5s ease 0s, opacity 1s ease 0s;
+ width: 100%;
+}
+.ola-ripple.ramesh-animate:active::after {
+ opacity: 0.2;
+ transform: scale(0, 0);
+ transition: all 0s ease 0s;
+}
+header.ramesh-animate {
+	height: 50px;
+}
+.toolbar.ramesh-animate {
+	height: 28px;
+	padding: 11px 0 12px;
+}
+.container.ramesh-animate {
+	height: 100vh;
+	position: absolute;
+	text-align: center;
+	width: 100vw;
+}
+.nav.ramesh-animate {
+	font-size: 0;
+	height: 48px;
+	text-align: center;
+}
+.tab.ramesh-animate {
+	display: inline-block;
+	font-size: 0;
+	line-height: 0;
+	width: 33%;
+}
+.tab.ramesh-animate > .shimmer.ramesh-animate {
+	border-radius: 10px;
+	height: 24px;
+	margin-top: 15px;
+	padding: 0 6px;
+}
+.center-logo.ramesh-animate {
+	display: block;
+	margin: 0 auto;
+	width: 70px;
+}
+.booking-section.ramesh-animate {
+	padding: 0 10px;
+}
+.row.shimmer.ramesh-animate {
+	border-radius: 5px;
+	height: 41px;
+	margin-bottom: 10px;
+	padding: 0 10px;
+}
+ola-app.ramesh-animate[unresolved] {
+	display: block;
+	min-height: 100vh;
+}
+@keyframes placeHolderShimmer {
+0% {
+ background-position: -300px 0;
+}
+100% {
+ background-position: 500px 0;
+}
+}
+.shimmer.ramesh-animate {
+	animation-duration: 1.5s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: 5;
+	animation-name: placeHolderShimmer;
+	animation-timing-function: ease-in-out;
+	background: rgba(0, 0, 0, 0) linear-gradient(to right, #e5e4e5 8%, #f2f0f2 18%, #e5e4e5 33%) repeat scroll 0 0 / 800px 104px;
+	position: relative;
+}
+.shimmer.d100.ramesh-animate {
+	animation-delay: 0.1s;
+}
+img.ramesh-animate, svg.ramesh-animate {
+	max-width: 100%;
+}
+.bg-light.ramesh-animate {
+	background: #f5f5f5 none repeat scroll 0 0;
+}
+.bg-white.ramesh-animate {
+	background: #ffffff none repeat scroll 0 0;
+}
+.bg-dark.ramesh-animate {
+	background: #e2e2e2 none repeat scroll 0 0;
+}
+.bg-highlight.ramesh-animate {
+	background: #cddc39 none repeat scroll 0 0;
+}
+.no-border.ramesh-animate {
+	border: medium none;
+}
+.bg-yellow.ramesh-animate {
+	background-color: #ffffe4;
+}
+.page-container.ramesh-animate {
+	margin: 0 8px;
+}
+.card.ramesh-animate {
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+	margin: 8px 0;
+	position: relative;
+}
+.mt-0.ramesh-animate {
+	margin-top: 0;
+}
+.left.ramesh-animate {
+	padding-left: 8px;
+	position: absolute;
+	width: 64px;
+}
+.right.ramesh-animate {
+	left: 64px;
+	position: absolute;
+	right: 8px;
+}
+.middle.ramesh-animate {
+	left: 64px;
+	position: absolute;
+	right: 40px;
+}
+.far-right.ramesh-animate {
+	line-height: 40px;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	width: 40px;
+}
+.h-full.ramesh-animate {
+	height: 100%;
+	line-height: 40px;
+	top: 0;
+}
+.h-full.ramesh-animate input.ramesh-animate {
+	height: 100%;
+}
+.row.ramesh-animate .h-full.ramesh-animate {
+	line-height: 48px;
+}
+.row.ramesh-animate {
+	display: block; transform: rotate(180deg);
+	height: 48px;
+	line-height: 28px;
+	padding: 8px 0;
+	position: relative;
+}
+.row-sm.ramesh-animate {
+	display: block;
+	height: 40px;
+	line-height: 20px;
+	padding: 10px 0;
+	position: relative;
+}
+.text.ramesh-animate {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.label.ramesh-animate {
+	color: #898989;
+	font-size: 10px;
+}
+.label.lg.ramesh-animate {
+	font-size: 12px;
+}
+.value.ramesh-animate {
+	color: black;
+	font-size: 15px;
+}
+.title.ramesh-animate {
+	color: #2b2b2b;
+	font-size: 22px;
+	font-weight: 300;
+}
+.sub-title.ramesh-animate {
+	color: #707070;
+	font-size: 14px;
+}
+.desc.ramesh-animate {
+	color: #6d6d6d;
+	font-size: 12px;
+}
+.placeholder.ramesh-animate {
+	color: #888;
+}
+.divider.ramesh-animate {
+	background: #e5e5e5 none repeat scroll 0 0;
+	height: 1px;
+}
+.divider.ramesh-animate:last-of-type {
+	display: none;
+}
+.ola-svg.ramesh-animate {
+	display: inline-block;
+	fill: currentcolor;
+	height: 24px;
+	pointer-events: none;
+	stroke: none;
+	width: 24px;
+}
+.divider.center.ramesh-animate {
+	margin: 0 8px;
+}
+.ola-select.ramesh-animate {
+	-moz-appearance: none;
+	background-color: transparent;	
+	background-position: right 0 center;
+	background-repeat: no-repeat;
+	background-size: 18px 6px;
+	border: medium none;
+	border-radius: 0;
+	float: left;
+	font-size: 15px;
+	height: 100%;
+	left: auto;
+	outline: medium none;
+	padding-left: 0;
+	position: relative;
+	text-align: left;
+	top: auto;
+	width: 100%;
+}
+a.ramesh-animate {
+	outline: medium none;
+	text-decoration: none;
+}
+a.ramesh-animate:active, a.ramesh-animate:hover {
+	outline-width: 0;
+}
+.ramesh-animate[hidden] {
+	display: none;
+}
+.ramesh-animate[invisible] {
+	visibility: hidden;
+}
+.confirm-btn.ramesh-animate {
+	background-color: #cddc39;
+	border: medium none;
+	border-radius: 3px;
+	font-size: 18px;
+	font-weight: 500;
+	height: 44px;
+	width: 100%;
+}
+.nxt-btn-inactive.ramesh-animate {
+	background-color: rgba(0, 0, 0, 0.1);
+	border: medium none;
+	border-radius: 4px;
+	box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.2) inset;
+	color: rgba(0, 0, 0, 0.2);
+	font-size: 18px;
+	font-weight: 500;
+	height: 44px;
+	text-align: center;
+	width: 100%;
+}
+.nxt-btn-active.ramesh-animate {
+	background-color: #000000;
+	border: medium none;
+	border-radius: 4px;
+	box-shadow: 0 -1px 0 0 rgba(255, 255, 255, 0.2) inset;
+	color: #cddc39;
+	font-size: 18px;
+	font-weight: 500;
+	height: 44px;
+	text-align: center;
+	width: 100%;
+}
+.text-center.ramesh-animate {
+	text-align: center;
+}
+.text-right.ramesh-animate {
+	text-align: right;
+}
+.text-danger.ramesh-animate {
+	color: #fe554c;
+}
+.chevron.ramesh-animate {
+	color: #acacac;
+	padding: 15px 0 0;
+	width: 25px;
+}
+
+img.bg-cover.ramesh-animate {
+	bottom: 0;
+	display: block;
+	height: 100%;
+	left: 0;
+	margin: auto;
+	right: 0;
+	top: 0;
+	width: 100%;
+}
+.circle-icon.ramesh-animate {
+	border-radius: 50%;
+	height: 40px;
+	overflow: hidden;
+	position: relative;
+	width: 40px;
+}
+.center.ramesh-animate {
+	text-align: center;
+}
+.blue-link.ramesh-animate {
+	color: #448aff;
+}
+.logo.ramesh-animate {
+	width: 70px;
+}
+.info-empty.ramesh-animate {
+	margin-top: 60px;
+	text-align: center;
+}
+.info-empty.ramesh-animate img.ramesh-animate {
+	height: 142px;
+	width: 142px;
+}
+.f-18.ramesh-animate {
+	font-size: 18px;
+	text-align: center;
+}
+.f-16.ramesh-animate {
+	font-size: 16px;
+	text-align: center;
+}
+.txt-lower.ramesh-animate {
+	text-transform: lowercase;
+}
+.iframe-container.ramesh-animate {
+	height: 100%;
+}
+@media (min-height: 550px) and (min-width: 550px) {
+.ptr.ramesh-animate, button.ramesh-animate {
+ cursor: pointer;
+}
+}
+ramesh-animate {
+	bottom: 0;
+	display: block;
+	overflow: auto;
+}
+.cab-row.ramesh-animate {
+	height: 70px;
+}
+.cab-icon.ramesh-animate img.ramesh-animate {
+	height: 38px;
+	position: relative;
+	top: -1px;
+	width: 38px;
+}
+.when-LATER.ramesh-animate .cab-icon.ramesh-animate {
+	margin-top: 8px;
+}
+.peak-icon.ramesh-animate {
+	display: block;
+	height: 10px;
+	left: 23px;
+	margin: auto;
+	position: absolute;
+	top: -12px;
+	width: 10px;
+	z-index: 1;
+}
+.cab-name.ramesh-animate {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1;
+	padding-top: 10px;
+}
+.desc.ramesh-animate {
+	line-height: 1;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.cab-row.ramesh-animate .desc.ramesh-animate {
+	padding-top: 7px;
+}
+.cab-eta.ramesh-animate {
+	font-size: 11px;
+	line-height: 14px;
+	position: relative;
+	text-align: center;
+	top: -15px;
+	width: 40px;
+}
+.cab-eta.ramesh-animate > .av-time.ramesh-animate {
+	position: relative;
+	top: 0;
+}
+.available-false.ramesh-animate > .av-time.ramesh-animate, .available-true.ramesh-animate > .av-wait.ramesh-animate {
+	display: none;
+}
+.available-false.ramesh-animate > .av-wait.ramesh-animate > img.ramesh-animate {
+	height: 5px;
+	width: 20px;
+}
+.price.ramesh-animate {
+	float: right;
+	font-weight: 700;
+}
+.price.ramesh-animate .shimmer.ramesh-animate {
+	display: block;
+	height: 12px;
+	margin-top: 2px;
+	width: 55px;
+}
+.cab-info-icon.ramesh-animate {
+	height: 100%;
+	padding-top: 0;
+}
+.cab-info-icon.ramesh-animate > a.ramesh-animate {
+	color: #448aff;
+}
+.cab-title.ramesh-animate {
+	height: 24px;
+	line-height: 24px;
+	margin: 4px 0 10px 8px;
+	position: relative;
+}
+.left.ramesh-animate {
+	padding-left: 10px;
+}
+.middle.ramesh-animate {
+	right: 32px;
+}
+.icon-placeholder.ramesh-animate {
+	height: 30px;
+	margin: 8px 0 0 8px;
+	width: 30px;
+}
+.text-placeholder.ramesh-animate {
+	display: inline-block;
+	height: 12px;
+	width: 80%;
+}
+.text-placeholder.title.ramesh-animate {
+	width: 40%;
+}
+.holder.middle.ramesh-animate {
+	line-height: 20px;
+	padding-top: 3px;
+}
+@media (max-width: 359px) {
+.value.ramesh-animate {
+ font-size: 14px;
+}
+.cab-name.ramesh-animate {
+ font-size: 15px;
+}
+}
+</style>
+</head>
+<body>
+<div class="card car-cont bg-white when-NOW p2p style-scope ramesh-animate"><template is="dom-repeat" as="cab" class="style-scope ramesh-animate"></template>
+  <div class="row cab-row style-scope ramesh-animate">
+    <div class="left cab-icon label style-scope ramesh-animate">
+      <div class="icon-placeholder shimmer style-scope ramesh-animate"></div>
+    </div>
+    <div class="middle holder style-scope ramesh-animate">
+      <div class="text-placeholder title shimmer style-scope ramesh-animate"></div>
+      <div class="text-placeholder shimmer style-scope ramesh-animate"></div>
+    </div>
+    <div class="far-right chevron style-scope ramesh-animate">
+      <div class="chevron-arrow style-scope ramesh-animate"></div>
+    </div>
+  </div>
+  
+  <!--<div class="divider center style-scope ramesh-animate"></div>
+  
+  
+  <div class="row cab-row style-scope ramesh-animate">
+    <div class="left cab-icon label style-scope ramesh-animate">
+      <div class="icon-placeholder shimmer style-scope ramesh-animate"></div>
+    </div>
+    <div class="middle holder style-scope ramesh-animate">
+      <div class="text-placeholder title shimmer style-scope ramesh-animate"></div>
+      <div class="text-placeholder shimmer style-scope ramesh-animate"></div>
+    </div>
+    <div class="far-right chevron style-scope ramesh-animate">
+      <div class="chevron-arrow style-scope ramesh-animate"></div>
+    </div>
+  </div>
+  <div class="divider center style-scope ramesh-animate"></div>
+  <div class="row cab-row style-scope ramesh-animate">
+    <div class="left cab-icon label style-scope ramesh-animate">
+      <div class="icon-placeholder shimmer style-scope ramesh-animate"></div>
+    </div>
+    <div class="middle holder style-scope ramesh-animate">
+      <div class="text-placeholder title shimmer style-scope ramesh-animate"></div>
+      <div class="text-placeholder shimmer style-scope ramesh-animate"></div>
+    </div>
+    <div class="far-right chevron style-scope ramesh-animate">
+      <div class="chevron-arrow style-scope ramesh-animate"></div>
+    </div>
+  </div>
+  <div class="divider center style-scope ramesh-animate"></div>
+  <div class="row cab-row style-scope ramesh-animate">
+    <div class="left cab-icon label style-scope ramesh-animate">
+      <div class="icon-placeholder shimmer style-scope ramesh-animate"></div>
+    </div>
+    <div class="middle holder style-scope ramesh-animate">
+      <div class="text-placeholder title shimmer style-scope ramesh-animate"></div>
+      <div class="text-placeholder shimmer style-scope ramesh-animate"></div>
+    </div>
+    <div class="far-right chevron style-scope ramesh-animate">
+      <div class="chevron-arrow style-scope ramesh-animate"></div>
+    </div>
+  </div>
+  <div class="divider center style-scope ramesh-animate"></div>
+  <div class="row cab-row style-scope ramesh-animate">
+    <div class="left cab-icon label style-scope ramesh-animate">
+      <div class="icon-placeholder shimmer style-scope ramesh-animate"></div>
+    </div>
+    <div class="middle holder style-scope ramesh-animate">
+      <div class="text-placeholder title shimmer style-scope ramesh-animate"></div>
+      <div class="text-placeholder shimmer style-scope ramesh-animate"></div>
+    </div>
+    <div class="far-right chevron style-scope ramesh-animate">
+      <div class="chevron-arrow style-scope ramesh-animate"></div>
+    </div>
+  </div> -->
+  <div class="divider center style-scope ramesh-animate"></div>
+  <template is="dom-repeat" class="style-scope ramesh-animate"></template></div>
+</body>
+</html>
